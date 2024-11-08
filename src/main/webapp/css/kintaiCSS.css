@@ -1,0 +1,27 @@
+@charset "UTF-8";
+body{
+    /*中央揃え*/
+    text-align: center;
+}
+#now{
+    font-size: 55px;
+    color:red;
+}
+.btn-group{
+    padding-top: 20px;
+}
+#btn-01{
+    font-size: 30px;
+    height: 55px;
+    width:80px;
+    border-radius:10%;
+    background-color: #ff6666;
+}
+
+#btn-02{
+    font-size: 30px;
+    height: 55px;
+    width:80px;
+    border-radius:10%;
+    background-color: #9999ff;
+}
