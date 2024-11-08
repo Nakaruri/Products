@@ -20,10 +20,10 @@ public class Login extends HttpServlet {
 		HttpServletResponse response) 
 		throws ServletException, IOException {
 		request.setCharacterEncoding("UTF-8");//p140 リクエストパラメータの文字コードを指定
-		String name = request.getParameter("name");// リクエストパラメータの取得
+		String id = request.getParameter("id");// リクエストパラメータの取得
 		String pass = request.getParameter("pass");
 		//Userインスタンス(ユーザー情報)の生成
-		User user = new User(name, pass);//なぜUserインスタンスを生成できないのか？？
+		User user = new User(id, pass);//なぜUserインスタンスを生成できないのか？？
 		//ログイン処理
 		LoginLogic loginLogic = new LoginLogic();
 		boolean isLogin = loginLogic.execute(user);

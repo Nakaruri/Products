@@ -21,8 +21,8 @@ public class User implements Serializable{ //Userクラスを生成
 		this.pass = pass;
 		}
 		
-	public User(String name, String pass) {
-		this.name = name;
+	public User(String id, String pass) {
+		this.id = id;
 	    this.pass = pass;
 	}
 		public String getId() {return id;}

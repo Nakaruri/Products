@@ -8,12 +8,12 @@
 </head>
 <body>
 <h1>勤怠ログイン</h1>
-<form action="Login" method="POST">
+<form action="/Login" method="POST">
 	社員番号：&nbsp;
 	<input type="text"name="id"id="id" placeholder="例:aB123456" required><br>
 	パスワード：&nbsp;
  	<input type="password" name="pass"id="pass" required><br>
- 	<input type ="submit" value="ログイン">
+ 	<button type="submit">Login</button>
  </form>
 </body>
 </html>
