@@ -3,6 +3,10 @@
 <%@ page import="model.User" %>
 <%
 User registerUser = (User)session.getAttribute("registerUser");
+if (registerUser == null) {
+    response.sendRedirect("/portfolio/RegisterUser");  // セッションがない場合は元のフォームにリダイレクト
+    return;
+}
 %>
 <!DOCTYPE html>
 <html>

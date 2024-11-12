@@ -23,7 +23,7 @@ public class Login extends HttpServlet {
 		String id = request.getParameter("id");// リクエストパラメータの取得
 		String pass = request.getParameter("pass");
 		//Userインスタンス(ユーザー情報)の生成
-		User user = new User(id, pass);//なぜUserインスタンスを生成できないのか？？
+		User user = new User(id, pass);
 		//ログイン処理
 		LoginLogic loginLogic = new LoginLogic();
 		boolean isLogin = loginLogic.execute(user);

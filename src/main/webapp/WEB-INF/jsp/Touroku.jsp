@@ -12,7 +12,7 @@
     <main>
         <article>
             <h1>従業員情報の登録</h1>
-            <form action="RegisterUser" method="POST">
+            <form action="/portfolio/RegisterUser" method="POST">
                 <label for="memberId">社員番号：&nbsp;
                     <input type="text"name="id"id="id" placeholder="例:aB123456" required>
                 </label><br>
@@ -41,9 +41,9 @@
                 <label for="pass">パスワード：&nbsp;
                     <input type="password" name="pass"id="pass" required>
                 </label><br>
-            </form>
             <label><input id="check" type="checkbox">利用規約に同意する</label><br>
-            <input id="button" type="submit" value="確認" disabled>
+            <input id="button" type="submit" value="確認" >
+            </form>
         </article>
     </main>
 </body>

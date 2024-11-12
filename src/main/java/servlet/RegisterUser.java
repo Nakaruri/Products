@@ -29,7 +29,7 @@ public class RegisterUser extends HttpServlet{
 	//「登録の開始」をリクエストされたときの処理
 		if(action == null) {
 			//フォワード先を設定
-			forwardPath ="WEB-INF/jsp/Touroku.jsp";
+			forwardPath ="/WEB-INF/jsp/Touroku.jsp";
 		}
 	//登録確認画面から「登録実行」をリクエストされたときの処理
 		else if(action.equals("done")) {
@@ -45,7 +45,7 @@ public class RegisterUser extends HttpServlet{
 			session.removeAttribute("registerUser");
 			
 			//登録後のフォワード先を設定
-			forwardPath = "WEB-INF/jsp/result.jsp";
+			forwardPath = "/WEB-INF/jsp/result.jsp";
 		}
 		
 	//設定されたフォワード先にフォワード
@@ -72,7 +72,7 @@ public class RegisterUser extends HttpServlet{
 		session.setAttribute("registerUser", registerUser);
 		
 		//フォワード
-		RequestDispatcher dispatcher = request.getRequestDispatcher("WEB-INF/jsp/kakunin.jsp");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/jsp/kakunin.jsp");
 		dispatcher.forward(request, response);
 	}
 }
